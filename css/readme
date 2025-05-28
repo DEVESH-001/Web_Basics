@@ -1,0 +1,72 @@
+# How css is rendered
+
+1. Browser loads the HTML
+2. Converts HTML to the DOM
+3. Fetched linked resources
+4. Browser parses css
+5. Render tree is laid out
+6. UI is printed
+
+Terminology + Core Concepts
+
+- replaced element
+- non-replaced element
+
+# SELECTORS
+
+- selects the HTML element or elements you want tp apply some styles to.
+
+1. Type Selectors
+   h1{
+   color:red;
+   }
+
+2. Class Selectors
+   .title{
+   color:red;
+   }
+
+3. ID selector
+   #title{
+   color:red;
+   }
+
+4. Universal Selector
+   \*{
+   color:red
+   }
+
+5. Combining Selectors
+   .body p{
+   color:pink;
+   }
+
+.body p#blue{
+color:blue;
+} color all the paragraph element with the ID blue inside of a class element body
+
+# Specificity - specificity_calculartor
+
+               algo used by the browser to determine which css declaration should be applied
+
+# Inline Styles -
+
+               have higher specificity than ID selectors. They overwrite IDs.
+               <p id ="text" stlye="color:blue">Lorem Ipsum</p>   #text{color:red}
+
+# Foundation
+
+1. Color
+   > i. Named Color : blue,red,orange
+   > ii. Hexadecimal : #0000FF
+   > iii. RGB : rgb(31,120,50)
+   > iv. RGBA : rgba(255,255,255,.5)
+   > v. HSL : hsl(50 80% 40%)
+
+# Length Values *look again
+
+i. px
+ii. em
+iii. rem
+      - px vs em vs rem
+      recommendation - rem
